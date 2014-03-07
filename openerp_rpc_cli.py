@@ -1,15 +1,14 @@
 import argparse
 import openerplib
 
-class openerp_rpc_cli(object):
+class OpenErpRpcCli(object):
 	"""
 	Wrapper around openerp-client-lib (openerplib) to provide argparse command line
 	arguments to CLI programs that use an OE RPC connections.
 
 	To use, inherit this class and override the do(arguments,  connection) function.
 	You can also override the set_arguments(parser) function to set your own argparse
-	arguments. self.description provides the argparse CLI description. For more info 
-	see example.py file.
+	arguments. self.description provides the argparse CLI description. 
 	"""
 
 	description = """
