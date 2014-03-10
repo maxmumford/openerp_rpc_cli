@@ -1,0 +1,1 @@
+import openerp_rpc_cli
